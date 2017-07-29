@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Counter from './containers/Counter';
-import LifeProTips from './containers/LifeProTips';
-import logo from './logo.svg';
+import Counter from './Counter';
+import LifeProTips from './LifeProTips';
+import logo from '../assets/logo.svg';
 import './App.css';
 
 class App extends Component {
