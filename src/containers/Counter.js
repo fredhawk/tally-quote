@@ -35,11 +35,11 @@ class Counter extends Component {
     return (
       <div>
         <h1>Counter</h1>
-        <input type="number" min="1" placeholder={this.state.increment} onChange={event => this.setIncrement(event)} />
+        <input type="number" min="1" value={this.state.increment} placeholder={this.state.increment} onChange={event => this.setIncrement(event)} />
         <button onClick={() => this.handleIncrement()}>increment</button>
         <button onClick={() => this.handleDecrement()}>decrement</button>
         <div>
-          Tally {this.state.tally}
+          Total {this.state.tally}
         </div>
       </div>
     );
