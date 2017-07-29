@@ -1,0 +1,1 @@
+# Tally counter that gives a life pro tip every time you change the counter.
