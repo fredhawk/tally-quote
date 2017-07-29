@@ -26,13 +26,7 @@ class LifeProTips extends Component {
         <h1>LifeProTips</h1>
         <article className="pro-tip">Here we will have a tip</article>
         <ul>
-          {this.state.tips.length === 0
-            ? ``
-            : this.state.tips.map(tip =>
-                <li key={tip.data.name}>
-                  {tip.data.title}
-                </li>
-              )}
+          {this.state.tips.length === 0 ? `` : this.state.tips[3].data.title}
         </ul>
       </div>
     );
