@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const subreddit = `LifeProTips`;
-const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=50`;
+const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=200`;
 
 class LifeProTips extends Component {
   constructor(props) {

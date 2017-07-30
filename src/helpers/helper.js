@@ -1,3 +1,3 @@
 export const randomNum = () => {
-  return Math.floor(Math.random() * 50);
+  return Math.floor(Math.random() * 200);
 };
