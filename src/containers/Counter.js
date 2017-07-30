@@ -9,23 +9,22 @@ class Counter extends Component {
     };
   }
   setIncrement(event) {
-    console.log(event.target.value);
     this.setState({
       increment: event.target.value
     });
   }
   handleIncrement() {
-    this.props.getRandNum();
+    // console.log(`Clicked`);
+    // this.props.getRandNum();
     this.setState(prevState => ({
       tally: prevState.tally * 1 + this.state.increment * 1
     }));
   }
   handleDecrement() {
-    if (this.state.tally <= 0) {
+    if (this.state.tally <= 0 || this.state.tally * 1 - this.state.increment * 1 <= 0) {
       this.setState({
         tally: 0
       });
-      // console.log(this.state.tally);
       return;
     }
     this.setState(prevState => ({

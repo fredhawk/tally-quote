@@ -14,18 +14,23 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      num: randomNum()
-    });
+    this.getRandomNumber();
+    // this.setState({
+    //   num: randomNum()
+    // });
+    console.log(`Component did mount`, this.state.num);
   }
 
   getRandomNumber() {
-    this.setState({
-      num: randomNum()
+    this.setState(prevState => {
+      return {
+        num: randomNum()
+      };
     });
+    console.log(`this got called`, this.state.num);
   }
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="App">
         <div className="App-header">
