@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { randomNum } from '../helpers/helper';
 
 const subreddit = `LifeProTips`;
-const url = `http://www.reddit.com/r/${subreddit}/new/.json?limit=50`;
+const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=50`;
 
 class LifeProTips extends Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class LifeProTips extends Component {
         <h1>LifeProTips</h1>
         <article className="pro-tip">Here we will have a tip</article>
         <div>
-          {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
+          {this.state.tips[this.props.randomNumber] ? this.state.tips[8].data.title : ``}
         </div>
       </div>
     );
