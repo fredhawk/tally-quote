@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { randomNum } from '../helpers/helper';
 
 const subreddit = `LifeProTips`;
 const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=50`;
@@ -17,7 +16,6 @@ class LifeProTips extends Component {
       this.setState({
         tips: data.data.children
       });
-      console.log(this.state.tips[this.props.randomNumber].data.title);
     });
   }
 
@@ -27,7 +25,7 @@ class LifeProTips extends Component {
         <h1>LifeProTips</h1>
         <article className="pro-tip">Here we will have a tip</article>
         <div>
-          {this.state.tips[this.props.randomNumber] ? this.state.tips[8].data.title : ``}
+          {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
         </div>
       </div>
     );

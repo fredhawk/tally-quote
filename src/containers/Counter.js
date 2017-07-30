@@ -15,7 +15,7 @@ class Counter extends Component {
   }
   handleIncrement() {
     // console.log(`Clicked`);
-    // this.props.getRandNum();
+    this.props.getRandNum();
     this.setState(prevState => ({
       tally: prevState.tally * 1 + this.state.increment * 1
     }));
