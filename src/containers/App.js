@@ -22,16 +22,12 @@ class App extends Component {
   }
 
   getRandomNumber() {
-    console.log(`get a random number`);
     const newNum = randomNum();
-    console.log(`newNum`, newNum);
     this.setState({
       num: newNum
     });
-    // console.log(`this got called`, this.state.num);
   }
   render() {
-    console.log(`this.state inside App.js`, this.state);
     return (
       <div className="App">
         <div className="App-header">
