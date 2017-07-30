@@ -15,10 +15,6 @@ class App extends Component {
 
   componentDidMount() {
     this.getRandomNumber();
-    // this.setState({
-    //   num: randomNum()
-    // });
-    console.log(`Component did mount`, this.state.num);
   }
 
   getRandomNumber() {
