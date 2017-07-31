@@ -1,0 +1,26 @@
+.Footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0.8em;
+}
+
+.Footer-madeby {
+  margin-right: 0.5em;
+}
+
+.Footer-githublink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #6200ea;
+}
+
+.Footer-github-icon {
+  margin-left: 0.4em;
+  fill: #0064b7;
+}

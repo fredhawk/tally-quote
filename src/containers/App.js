@@ -26,8 +26,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counter getRandNum={() => this.getRandomNumber()} />
-        <LifeProTips randomNumber={this.state.num} />
+        <div className="content">
+          <Counter getRandNum={() => this.getRandomNumber()} />
+          <LifeProTips randomNumber={this.state.num} />
+        </div>
         <Footer />
       </div>
     );

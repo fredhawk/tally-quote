@@ -1,6 +1,17 @@
 .App {
   text-align: center;
   display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+@media (min-width: 480px) {
+  .App {
+    height: 90vh;
+  }
+}
+.content {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
