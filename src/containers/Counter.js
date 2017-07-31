@@ -48,7 +48,7 @@ class Counter extends Component {
           </button>
         </div>
         <div className="Counter-result">
-          Total {this.state.tally}
+          Total <span>{this.state.tally}</span>
         </div>
       </section>
     );
