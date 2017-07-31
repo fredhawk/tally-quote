@@ -23,8 +23,8 @@ class LifeProTips extends Component {
   render() {
     return (
       <section className="LPT">
+        <h1 className="LPT-title">LifeProTips</h1>
         <article className="LPT-tip">
-          <h1 className="LPT-title">LifeProTips</h1>
           <p className="LPT-text">
             {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
           </p>
