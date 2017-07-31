@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './LifeProTips.css';
 
 const subreddit = `LifeProTips`;
-const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=200`;
+const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=100`;
 
 class LifeProTips extends Component {
   constructor(props) {
@@ -23,11 +23,13 @@ class LifeProTips extends Component {
   render() {
     return (
       <section className="LPT">
-        <h1 className="LPT-title">LifeProTips</h1>
+        <h1 className="LPT-title"> LifeProTips </h1>
         <article className="LPT-tip">
-          <p className="LPT-text">
-            {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
-          </p>
+          <blockquote className="LPT-text">
+            <p>
+              {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
+            </p>
+          </blockquote>
         </article>
       </section>
     );

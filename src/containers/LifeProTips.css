@@ -16,7 +16,33 @@
 }
 
 .LPT-text {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   line-height: 1.8rem;
+}
+
+blockquote {
+  border-left: 5px solid #80deea;
+  background: #e5ffff;
+  border-radius: 5px;
+  padding: 0.5em 10px;
+  margin: 1.5em 10px;
+}
+
+blockquote:before {
+  color: #81b9bf;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #81b9bf;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.4em;
+  vertical-align: -0.6em;
+}
+blockquote p {
+  display: inline;
 }
