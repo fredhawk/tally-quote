@@ -27,7 +27,6 @@ class LifeProTips extends Component {
           <h1 className="LPT-title">LifeProTips</h1>
           <p className="LPT-text">
             {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quae placeat odit deleniti a architecto eius. Repellat, natus nesciunt nihil.
           </p>
         </article>
       </section>
