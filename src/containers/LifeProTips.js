@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './LifeProTips.css';
 
 const subreddit = `LifeProTips`;
-const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=100`;
+const url = `https://www.reddit.com/r/${subreddit}/hot/.json?limit=100`;
 
 class LifeProTips extends Component {
   constructor(props) {
