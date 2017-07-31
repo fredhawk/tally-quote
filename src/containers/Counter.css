@@ -10,8 +10,14 @@
   font-size: 3rem;
 }
 
+.Counter-increment-label {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-right: 1em;
+}
+
 .Counter-increment-input {
-  display: block;
+  display: inline-block;
   width: 100px;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;

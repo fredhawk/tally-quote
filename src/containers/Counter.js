@@ -35,7 +35,10 @@ class Counter extends Component {
     return (
       <section className="Counter">
         <h1 className="Counter-title">Counter</h1>
-        <input className="Counter-increment-input" type="number" min="1" value={this.state.increment} placeholder={this.state.increment} onChange={event => this.setIncrement(event)} />
+        <label htmlFor="counter" className="Counter-increment-label">
+          Increase by
+        </label>
+        <input className="Counter-increment-input" name="counter" type="number" min="1" value={this.state.increment} placeholder={this.state.increment} onChange={event => this.setIncrement(event)} />
         <div className="Counter-btns">
           <button className="Counter-btn-increase Counter-btn" onClick={() => this.handleIncrement()}>
             +
