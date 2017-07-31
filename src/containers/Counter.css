@@ -1,6 +1,8 @@
 .Counter {
   padding-top: 3rem;
   max-width: 600px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .Counter-title {

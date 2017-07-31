@@ -1,15 +1,13 @@
 .LPT {
   padding-top: 3rem;
   max-width: 600px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .LPT-tip {
   color: #2c3e50;
   font-size: 1.2rem;
-  /* display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .LPT-title {
@@ -18,7 +16,6 @@
 }
 
 .LPT-text {
-  /* width: 300px; */
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   line-height: 1.8rem;
