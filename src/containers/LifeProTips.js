@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './LifeProTips.css';
 
 const subreddit = `LifeProTips`;
 const url = `http://www.reddit.com/r/${subreddit}/hot/.json?limit=200`;
@@ -21,13 +22,15 @@ class LifeProTips extends Component {
 
   render() {
     return (
-      <div>
-        <h1>LifeProTips</h1>
-        <article className="pro-tip">Here we will have a tip</article>
-        <div>
-          {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
-        </div>
-      </div>
+      <section className="LPT">
+        <article className="LPT-tip">
+          <h1 className="LPT-title">LifeProTips</h1>
+          <p className="LPT-text">
+            {this.state.tips[this.props.randomNumber] ? this.state.tips[this.props.randomNumber].data.title : ``}
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quae placeat odit deleniti a architecto eius. Repellat, natus nesciunt nihil.
+          </p>
+        </article>
+      </section>
     );
   }
 }

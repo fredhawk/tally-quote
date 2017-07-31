@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Counter.css';
 
 class Counter extends Component {
   constructor(props) {
@@ -32,15 +33,21 @@ class Counter extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Counter</h1>
-        <input type="number" min="1" value={this.state.increment} placeholder={this.state.increment} onChange={event => this.setIncrement(event)} />
-        <button onClick={() => this.handleIncrement()}>increment</button>
-        <button onClick={() => this.handleDecrement()}>decrement</button>
-        <div>
+      <section className="Counter">
+        <h1 className="Counter-title">Counter</h1>
+        <input className="Counter-increment-input" type="number" min="1" value={this.state.increment} placeholder={this.state.increment} onChange={event => this.setIncrement(event)} />
+        <div className="Counter-btns">
+          <button className="Counter-btn-increase Counter-btn" onClick={() => this.handleIncrement()}>
+            +
+          </button>
+          <button className="Counter-btn-decrease Counter-btn" onClick={() => this.handleDecrement()}>
+            -
+          </button>
+        </div>
+        <div className="Counter-result">
           Total {this.state.tally}
         </div>
-      </div>
+      </section>
     );
   }
 }
