@@ -43,6 +43,13 @@ class Counter extends Component {
       tally: prevState.tally * 1 - this.state.increment * 1
     }));
   }
+
+  resetCounters() {
+    localStorage.setItem(`Total ${this.props.country}`, JSON.stringify(0));
+    this.setState({
+      tally: 0
+    });
+  }
   render() {
     return (
       <section className="Counter">
@@ -64,6 +71,9 @@ class Counter extends Component {
         <div className="Counter-result">
           Total <span>{this.state.tally}</span>
         </div>
+        <button className="Counter-btn__reset" onClick={() => this.resetCounters()}>
+          Reset counter
+        </button>
       </section>
     );
   }
