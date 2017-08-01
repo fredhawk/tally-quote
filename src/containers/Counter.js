@@ -9,16 +9,22 @@ class Counter extends Component {
       tally: 0
     };
   }
-  // componentDidMount() {
-  //   localStorage.getItem() {}
-  // }
+  componentDidMount() {
+    const countryCode = `Total ${this.props.country}`;
+    if (localStorage.getItem(countryCode)) {
+      this.setState({
+        tally: localStorage.getItem(countryCode)
+      });
+    }
+  }
   setIncrement(event) {
     this.setState({
       increment: event.target.value
     });
   }
   handleIncrement() {
-    localStorage.setItem(`total ${this.props.country}`, JSON.stringify(this.state.tally * 1 + this.state.increment * 1));
+    const newValue = this.state.tally * 1 + this.state.increment * 1;
+    localStorage.setItem(`Total ${this.props.country}`, JSON.stringify(newValue));
     this.props.getRandNum();
     this.setState(prevState => ({
       tally: prevState.tally * 1 + this.state.increment * 1
