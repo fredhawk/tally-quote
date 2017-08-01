@@ -34,7 +34,9 @@ class Counter extends Component {
   render() {
     return (
       <section className="Counter">
-        <h1 className="Counter-title">Counter</h1>
+        <h1 className="Counter-title">
+          Counter {this.props.country}
+        </h1>
         <label htmlFor="counter" className="Counter-increment-label">
           Increase by
         </label>

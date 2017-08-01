@@ -27,7 +27,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="content">
-          <Counter getRandNum={() => this.getRandomNumber()} />
+          <Counter getRandNum={() => this.getRandomNumber()} country="DK" />
+          <Counter getRandNum={() => this.getRandomNumber()} country="NO" />
+          <Counter getRandNum={() => this.getRandomNumber()} country="SE" />
           <LifeProTips randomNumber={this.state.num} />
         </div>
         <Footer />
