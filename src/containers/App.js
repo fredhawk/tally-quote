@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Counter from './Counter';
+import CounterList from './CounterList';
 import LifeProTips from './LifeProTips';
 import Footer from '../components/Footer';
 import { randomNum } from '../helpers/helper';
@@ -27,9 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="content">
-          <Counter getRandNum={() => this.getRandomNumber()} country="DK" />
-          <Counter getRandNum={() => this.getRandomNumber()} country="NO" />
-          <Counter getRandNum={() => this.getRandomNumber()} country="SE" />
+          <CounterList getRandNum={() => this.getRandomNumber()} />
           <LifeProTips randomNumber={this.state.num} />
         </div>
         <Footer />

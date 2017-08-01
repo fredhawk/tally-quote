@@ -32,13 +32,13 @@ class Counter extends Component {
   }
   handleDecrement() {
     if (this.state.tally <= 0 || this.state.tally * 1 - this.state.increment * 1 <= 0) {
-      localStorage.setItem(`total ${this.props.country}`, JSON.stringify(0));
+      localStorage.setItem(`Total ${this.props.country}`, JSON.stringify(0));
       this.setState({
         tally: 0
       });
       return;
     }
-    localStorage.setItem(`total ${this.props.country}`, JSON.stringify(this.state.tally * 1 - this.state.increment * 1));
+    localStorage.setItem(`Total ${this.props.country}`, JSON.stringify(this.state.tally * 1 - this.state.increment * 1));
     this.setState(prevState => ({
       tally: prevState.tally * 1 - this.state.increment * 1
     }));
